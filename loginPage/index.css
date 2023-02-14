@@ -1,0 +1,91 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    /*直接设置盒子宽度*/
+}
+
+
+html{
+    font-size:10px;
+}
+
+html::before{
+    content:"";
+    width:100%;
+    height:100%;
+    position:fixed;
+    z-index:-1;
+    background:linear-gradient(120deg,aqua,antiquewhite) no-repeat;
+    /*linear-gradient(angle,start,end)*/
+}
+
+.box{
+    display:flex;width:90rem;
+    height:50rem;
+    background-color:rgb(228, 204, 227);
+    border-radius:1.5rem;
+    margin:10% auto;
+    box-shadow:0 0 1rem o.2rem rgb(0 0 0 / 10%);
+}
+
+.box .left{
+    position:relative;
+    width:40%;
+    height:100%;
+    background-color:skyblue;
+
+}
+
+.box .left::before{
+    content:'';
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-image:url('../loginPage/src/picture/gis登录界面.png');
+    opacity:80%;
+}
+
+.box .right{
+    display:flex;
+    width:60%;
+    flex-direction:column;
+    align-items:center;
+}
+
+.box .right h4{
+    color:purple;
+    font-size:3rem;
+    margin:5rem;
+}
+
+.box .right form .acount {
+    outline:none;
+    width:80%;
+    height:5rem;
+    font-size:1.5rem;
+    margin-top:1rem;
+    padding:1rem 0 0 1.5rem;
+    border:none;
+    border-bottom:0.1rem solid blueviolet;
+    border-radius:1px solid rebg(144,130,240);
+    background-color:bisque;
+
+}
+
+.box .right form .login{
+    height:5rem;
+    width:10%;
+    margin-top:1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
